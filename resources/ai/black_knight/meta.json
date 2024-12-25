@@ -1,0 +1,19 @@
+{
+  "name": "Schwarzer Ritter",
+  "description": "Die KI Schwarzer Ritter von Wurzelkasper inspiriert durch Monthy Python mit gepitchten Sprüchen aus Stronghold 2",
+  "author": "Wurzelkasper",
+  "link": "https://www.youtube.com/user/Wurzelkasper",
+  "version": "1.0.0",
+  "defaultLang": "de",
+  "supportedLang": ["de"],
+  "switched": {
+    "binks": true,
+    "speech": true,
+    "aic": true,
+    "aiv": true,
+    "lord": true,
+    "startTroops": true,
+    "lines": true,
+    "portrait": true
+  }
+}
