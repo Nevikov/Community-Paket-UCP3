@@ -4,7 +4,7 @@ Das Community-Paket enthält eine Auswahl der hochwertigsten KIs langjähriger, 
 Alle KIs zeichnet ein hoher Qualitätsstandard aus - neue Charaktere mit Komplettüberarbeitung, guter Build-Order und einer passenden Mischung aus Stärke und Persönlichkeit, die sich ins mittelalterliche Stronghold-Setting der Kreuzzüge einfügt. Vor allem für KI-Kämpfe sind die Charaktere besonders gut abgestimmt, auch als Spielergegner sind sie recht herausfordernd.
 Verwaltet wird das Community-Paket von mir, Nevikov. 
 
-![Bild](Legends_Of_The_Orient.png)
+![Bild](https://github.com/Nevikov/Community-Paket-UCP3/blob/main/Community-Paket-Files/CP-UCP3.jpg)
 
 Den GitHub zum Community-Paket findet ihr hier: [GitHub](https://github.com/Nevikov/Community-Paket-UCP3)!  
 

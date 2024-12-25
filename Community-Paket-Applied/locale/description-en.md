@@ -4,7 +4,7 @@ The Community Package includes a selection of the finest AIs created by long-sta
 All AIs stand out for their high quality: new completely overhauled characters, well-thought-out build orders, and a balanced mix of strength and personality that fits seamlessly into the medieval Stronghold Crusader setting. The characters are especially well-suited for AI battles and also pose a fair challenge as opponents for players.  
 The Community Package is managed by me, Nevikov.  
 
-![Image](Legends_Of_The_Orient.png)
+![Image](https://github.com/Nevikov/Community-Paket-UCP3/blob/main/Community-Paket-Files/CP-UCP3.jpg)
 
 You can find the GitHub link to the Community Package here: [GitHub](https://github.com/Nevikov/Community-Paket-UCP3)!  
 
