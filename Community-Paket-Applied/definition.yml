@@ -1,0 +1,9 @@
+name: Community-Paket-Applied
+author: Nevikov
+version: 1.0.0
+dependencies:
+  ucp2-legacy: ^2.15.1
+  graphicsApiReplacer: ^1.2.0
+  Community-Paket: ^1.0.0
+  framework: ">=3.0.5"
+  frontend: ">=1.0.11"
