@@ -9,15 +9,193 @@ config-sparse:
           enabled:
             contents:
               suggested-value: true
-          parameters:
-            disableInitialOxTether:
-              contents:
-                suggested-value: true
           log:
             contents:
               suggested-value:
                 enabled: true
                 sliderValue: 2
+    ucp2-legacy:
+      config:
+        ai_access:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_assaultswitch:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_buywood:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_defense:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_fix_crusader_archers_pitch:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_fix_laddermen_with_enclosed_keep:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_nosleep:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_rebuild:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_towerengines:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_housing:
+          build_housing:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 5
+        ai_demolish:
+          ai_demolish_walls:
+            enabled:
+              contents:
+                suggested-value: true
+          ai_demolish_trapped:
+            enabled:
+              contents:
+                suggested-value: true
+          ai_demolish_eco:
+            enabled:
+              contents:
+                suggested-value: true
+        o_freetrader:
+          enabled:
+            contents:
+              suggested-value: true
+        o_healer:
+          enabled:
+            contents:
+              suggested-value: true
+        o_responsivegates:
+          enabled:
+            contents:
+              suggested-value: true
+        fix_apple_orchard_build_size:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_recruitstate_initialtimer:
+          contents:
+            suggested-value:
+              enabled: true
+              sliderValue: 0
+        ai_attackwave:
+          contents:
+            suggested-value:
+              enabled: true
+              sliderValue: 9
+        ai_attacklimit:
+          contents:
+            suggested-value:
+              enabled: true
+              sliderValue: 3000
+        ai_addattack:
+          contents:
+            suggested-value:
+              enabled: true
+              choice: relative
+              choices:
+                absolute:
+                  slider: 5
+                relative:
+                  slider: 0.5
+        u_arabwall:
+          enabled:
+            contents:
+              suggested-value: true
+        u_laddermen:
+          enabled:
+            contents:
+              suggested-value: true
+        u_arabxbow:
+          enabled:
+            contents:
+              suggested-value: true
+        u_spearmen:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_rapid_deletion_bug:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_baker_disappear:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_fletcher_bug:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_ladderclimb:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_moat_digging_unit_disappearing:
+          enabled:
+            contents:
+              suggested-value: true
+        o_restore_arabian_engineer_speech:
+          enabled:
+            contents:
+              suggested-value: true
+        u_fireballistafix:
+          enabled:
+            contents:
+              suggested-value: true
+        u_fix_applefarm_blocking:
+          enabled:
+            contents:
+              suggested-value: true
+        u_fix_lord_animation_stuck_movement:
+          enabled:
+            contents:
+              suggested-value: true
+        u_tanner_fix:
+          enabled:
+            contents:
+              suggested-value: true
+        o_increase_path_update_tick_rate:
+          enabled:
+            contents:
+              suggested-value: true
+        o_xtreme:
+          enabled:
+            contents:
+              suggested-value: true
+        o_engineertent:
+          enabled:
+            contents:
+              suggested-value: true
+        o_gamespeed:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fast_placing:
+          enabled:
+            contents:
+              suggested-value: true
+        o_moatvisibility:
+          enabled:
+            contents:
+              suggested-value: true
+        o_keys:
+          enabled:
+            contents:
+              suggested-value: false
     running-units:
       config:
         macemen:
@@ -30,26 +208,1003 @@ config-sparse:
             general:
               contents:
                 suggested-value: true
-    ucp2-legacy:
+    aiSwapper:
       config:
-        ai_tethers:
-          enabled:
-            contents:
-              suggested-value: false
-        o_onlyai:
-          enabled:
-            contents:
-              suggested-value: false
-        u_spearmen_run:
-          enabled:
-            contents:
-              suggested-value: false
+        menu:
+          contents:
+            suggested-value:
+              rat:
+                - name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              snake:
+                - name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              pig:
+                - name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              wolf:
+                - name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              saladin:
+                - name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              caliph:
+                - name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              sultan:
+                - name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              richard:
+                - name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              frederick:
+                - name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              phillip:
+                - name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              wazir:
+                - name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              emir:
+                - name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              nizar:
+                - name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              sheriff:
+                - name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              marshal:
+                - name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+              abbot:
+                - name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  control:
+                    binks: true
+                    speech: true
+                    lines: true
+                    portrait: true
+                    aic: true
+                    aiv: true
+                    lord: true
+                    startTroops: true
+        defaultLanguage:
+          contents:
+            suggested-value: null
+        ai:
+          rat:
+            binks:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: FriedrichII
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
+                  active: true
+          snake:
+            binks:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Alexios
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
+                  active: true
+          pig:
+            binks:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Pascha
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
+                  active: true
+          wolf:
+            binks:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Lord Stauten
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
+                  active: true
+          saladin:
+            binks:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Menschenhändler
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
+                  active: true
+          caliph:
+            binks:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Schwarzer Ritter
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
+                  active: true
+          sultan:
+            binks:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Emira
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
+                  active: true
+          richard:
+            binks:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Sultana
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
+                  active: true
+          frederick:
+            binks:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Kaiser
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
+                  active: true
+          phillip:
+            binks:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Templer
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
+                  active: true
+          wazir:
+            binks:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Schakal
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
+                  active: true
+          emir:
+            binks:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Hyäne
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
+                  active: true
+          nizar:
+            binks:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Großwesir
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
+                  active: true
+          sheriff:
+            binks:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Eleonore
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
+                  active: true
+          marshal:
+            binks:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Inquisitor
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
+                  active: true
+          abbot:
+            binks:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+            speech:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+            lines:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+            portrait:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+            aic:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+            aiv:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: Der Alte vom Berge
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
+                  active: true
+    graphicsApiReplacer:
+      config: {}
   plugins:
     Community-Paket:
       config: {}
   load-order:
+    - extension: graphicsApiReplacer
+      version: 1.3.0
     - extension: ai-ox-tethers
       version: 1.0.0
+    - extension: ucp2-legacy
+      version: 2.15.1
     - extension: running-units
       version: 1.0.1
     - extension: Community-Paket
@@ -107,12 +1262,12 @@ config-full:
           campfire_housing:
             contents:
               value:
-                enabled: true
+                enabled: false
                 sliderValue: 8
           delete_housing:
             enabled:
               contents:
-                value: true
+                value: false
         ai_resources_rebuy:
           flour:
             contents:
@@ -127,8 +1282,8 @@ config-full:
           wood:
             contents:
               value:
-                enabled: true
-                sliderValue: 0
+                enabled: false
+                sliderValue: 36
         ai_demolish:
           ai_demolish_walls:
             enabled:
@@ -149,7 +1304,7 @@ config-full:
               choice: relative
               choices:
                 absolute:
-                  slider: 250
+                  slider: 5
                 relative:
                   slider: 0.5
         ai_attacklimit:
@@ -166,7 +1321,7 @@ config-full:
           contents:
             value:
               enabled: true
-              sliderValue: 8
+              sliderValue: 9
         ai_recruitinterval:
           enabled:
             contents:
@@ -314,7 +1469,7 @@ config-full:
         o_fast_placing:
           enabled:
             contents:
-              value: false
+              value: true
         o_default_multiplayer_speed:
           contents:
             value:
@@ -323,7 +1478,7 @@ config-full:
         o_engineertent:
           enabled:
             contents:
-              value: false
+              value: true
         o_gamespeed:
           enabled:
             contents:
@@ -331,11 +1486,11 @@ config-full:
         o_keys:
           enabled:
             contents:
-              value: true
+              value: false
         o_moatvisibility:
           enabled:
             contents:
-              value: false
+              value: true
     aicloader:
       config:
         failureHandling:
@@ -472,7 +1627,7 @@ config-full:
             value:
               rat:
                 - name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   control:
                     binks: true
                     speech: true
@@ -484,7 +1639,7 @@ config-full:
                     startTroops: true
               snake:
                 - name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   control:
                     binks: true
                     speech: true
@@ -496,7 +1651,7 @@ config-full:
                     startTroops: true
               pig:
                 - name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   control:
                     binks: true
                     speech: true
@@ -508,7 +1663,7 @@ config-full:
                     startTroops: true
               wolf:
                 - name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   control:
                     binks: true
                     speech: true
@@ -520,7 +1675,7 @@ config-full:
                     startTroops: true
               saladin:
                 - name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   control:
                     binks: true
                     speech: true
@@ -532,7 +1687,7 @@ config-full:
                     startTroops: true
               caliph:
                 - name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   control:
                     binks: true
                     speech: true
@@ -544,7 +1699,7 @@ config-full:
                     startTroops: true
               sultan:
                 - name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   control:
                     binks: true
                     speech: true
@@ -556,7 +1711,7 @@ config-full:
                     startTroops: true
               richard:
                 - name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   control:
                     binks: true
                     speech: true
@@ -568,7 +1723,7 @@ config-full:
                     startTroops: true
               frederick:
                 - name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   control:
                     binks: true
                     speech: true
@@ -580,7 +1735,7 @@ config-full:
                     startTroops: true
               phillip:
                 - name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   control:
                     binks: true
                     speech: true
@@ -592,7 +1747,7 @@ config-full:
                     startTroops: true
               wazir:
                 - name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   control:
                     binks: true
                     speech: true
@@ -604,7 +1759,7 @@ config-full:
                     startTroops: true
               emir:
                 - name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   control:
                     binks: true
                     speech: true
@@ -616,7 +1771,7 @@ config-full:
                     startTroops: true
               nizar:
                 - name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   control:
                     binks: true
                     speech: true
@@ -628,7 +1783,7 @@ config-full:
                     startTroops: true
               sheriff:
                 - name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   control:
                     binks: true
                     speech: true
@@ -640,7 +1795,7 @@ config-full:
                     startTroops: true
               marshal:
                 - name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   control:
                     binks: true
                     speech: true
@@ -652,7 +1807,7 @@ config-full:
                     startTroops: true
               abbot:
                 - name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   control:
                     binks: true
                     speech: true
@@ -671,787 +1826,785 @@ config-full:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
             speech:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
             lines:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
             portrait:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
             aic:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
             aiv:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
             lord:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
             startTroops:
               contents:
                 value:
                   name: FriedrichII
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Friedrich/
+                  root: ucp/plugins/Community-Paket/resources/ai/Friedrich/
                   active: true
           snake:
             binks:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
             speech:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
             lines:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
             portrait:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
             aic:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
             aiv:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
             lord:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Alexios
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alexios/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alexios/
                   active: true
           pig:
             binks:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
             speech:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
             lines:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
             portrait:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
             aic:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
             aiv:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
             lord:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Pascha
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Pascha/
+                  root: ucp/plugins/Community-Paket/resources/ai/Pascha/
                   active: true
           wolf:
             binks:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
             speech:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
             lines:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
             portrait:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
             aic:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
             aiv:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
             lord:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Lord Stauten
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/LordStauten/
+                  root: ucp/plugins/Community-Paket/resources/ai/LordStauten/
                   active: true
           saladin:
             binks:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
             speech:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
             lines:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
             portrait:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
             aic:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
             aiv:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
             lord:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Menschenhändler
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Menschenhaendler/
+                  root: ucp/plugins/Community-Paket/resources/ai/Menschenhaendler/
                   active: true
           caliph:
             binks:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
             speech:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
             lines:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
             portrait:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
             aic:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
             aiv:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
             lord:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Schwarzer Ritter
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/black_knight/
+                  root: ucp/plugins/Community-Paket/resources/ai/black_knight/
                   active: true
           sultan:
             binks:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
             speech:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
             lines:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
             portrait:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
             aic:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
             aiv:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
             lord:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Emira
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Emira/
+                  root: ucp/plugins/Community-Paket/resources/ai/Emira/
                   active: true
           richard:
             binks:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
             speech:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
             lines:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
             portrait:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
             aic:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
             aiv:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
             lord:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Sultana
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Sultana/
+                  root: ucp/plugins/Community-Paket/resources/ai/Sultana/
                   active: true
           frederick:
             binks:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
             speech:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
             lines:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
             portrait:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
             aic:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
             aiv:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
             lord:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Kaiser
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Kaiser/
+                  root: ucp/plugins/Community-Paket/resources/ai/Kaiser/
                   active: true
           phillip:
             binks:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
             speech:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
             lines:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
             portrait:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
             aic:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
             aiv:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
             lord:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Templer
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Templer/
+                  root: ucp/plugins/Community-Paket/resources/ai/Templer/
                   active: true
           wazir:
             binks:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
             speech:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
             lines:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
             portrait:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
             aic:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
             aiv:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
             lord:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Schakal
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Schakal/
+                  root: ucp/plugins/Community-Paket/resources/ai/Schakal/
                   active: true
           emir:
             binks:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
             speech:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
             lines:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
             portrait:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
             aic:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
             aiv:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
             lord:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Hyäne
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Hyaene/
+                  root: ucp/plugins/Community-Paket/resources/ai/Hyaene/
                   active: true
           nizar:
             binks:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
             speech:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
             lines:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
             portrait:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
             aic:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
             aiv:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
             lord:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Großwesir
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Grosswesir/
+                  root: ucp/plugins/Community-Paket/resources/ai/Grosswesir/
                   active: true
           sheriff:
             binks:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
             speech:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
             lines:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
             portrait:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
             aic:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
             aiv:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
             lord:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Eleonore
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Eleonore/
+                  root: ucp/plugins/Community-Paket/resources/ai/Eleonore/
                   active: true
           marshal:
             binks:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
             speech:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
             lines:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
             portrait:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
             aic:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
             aiv:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
             lord:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Inquisitor
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Inquisitor/
+                  root: ucp/plugins/Community-Paket/resources/ai/Inquisitor/
                   active: true
           abbot:
             binks:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
             speech:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
             lines:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
             portrait:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
             aic:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
             aiv:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
             lord:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
             startTroops:
               contents:
                 value:
                   name: Der Alte vom Berge
-                  root: ucp/plugins/Community-Paket-Files/resources/ai/Alter_vom_Berge/
+                  root: ucp/plugins/Community-Paket/resources/ai/Alter_vom_Berge/
                   active: true
-    winProcHandler:
-      config: {}
     gmResourceModifier:
       config: {}
     textResourceModifier:
@@ -1460,35 +2613,33 @@ config-full:
       config: {}
     aivloader:
       config: {}
-  plugins:
-    Community-Paket-Files:
+    winProcHandler:
       config: {}
+  plugins:
     Community-Paket:
       config: {}
   load-order:
-    - extension: ucp2-legacy
-      version: 2.15.1
-    - extension: winProcHandler
-      version: 0.2.0
     - extension: gmResourceModifier
       version: 0.2.0
     - extension: textResourceModifier
       version: 0.3.0
     - extension: aicloader
       version: 1.1.2
-    - extension: graphicsApiReplacer
-      version: 1.3.0
     - extension: files
       version: 1.3.0
     - extension: aivloader
       version: 1.0.0
     - extension: aiSwapper
       version: 1.1.0
-    - extension: Community-Paket-Files
-      version: 1.0.1
+    - extension: winProcHandler
+      version: 0.2.0
+    - extension: graphicsApiReplacer
+      version: 1.3.0
     - extension: ai-ox-tethers
       version: 1.0.0
+    - extension: ucp2-legacy
+      version: 2.15.1
     - extension: running-units
       version: 1.0.1
     - extension: Community-Paket
-      version: 1.0.1
+      version: 1.1.1
