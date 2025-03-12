@@ -4,6 +4,6 @@ version: 1.1.1
 dependencies:
   ucp2-legacy: ^2.15.1
   graphicsApiReplacer: ^1.2.0
-  Community-Paket-Files: ^1.0.1
+  Community-Paket-Files: ^1.1.1
   framework: ">=3.0.5"
   frontend: ">=1.0.11"
