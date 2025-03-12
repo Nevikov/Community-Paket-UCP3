@@ -4,7 +4,7 @@ version: 1.1.1
 dependencies:
   ucp2-legacy: ^2.15.1
   graphicsApiReplacer: ^1.2.0
-  Community-Paket-Files: ^1.1.1
+  Community-Paket-Files: ^1.0.1
   running-units: ^1.0.1
   ai-ox-tethers: ^1.0.0
   framework: ">=3.0.5"
