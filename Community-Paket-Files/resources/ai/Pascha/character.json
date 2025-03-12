@@ -181,16 +181,24 @@
     "AttUnitBackupMax": 0,
     "AttUnitBackupGroupsCount": 0,
     "AttUnitEngage": "Spearman",
-    "AttUnitEngageMax": 200,
-    "AttUnitSiegeDef": "None",
+    "AttUnitEngageMax": 50,
+    "AttUnitSiegeDef": "ArabArcher",
     "AttUnitSiegeDefMax": 0,
     "AttUnitSiegeDefGroupsCount": 0,
     "AttUnitMain1": "ArabSwordsman",
-    "AttUnitMain2": "ArabSwordsman",
+    "AttUnitMain2": "Spearman",
     "AttUnitMain3": "ArabSwordsman",
     "AttUnitMain4": "ArabSwordsman",
     "AttMaxDefault": 600,
     "AttMainGroupsCount": 1,
-    "TargetChoice": "Balanced"
+    "TargetChoice": "Balanced",
+ 	"RunningUnits_Spearmen": 1,
+"AIOxTethers_DisableInitialOxTether"    : 1,
+      "AIOxTethers_Logic"                     : 1,
+      "AIOxTethers_MaxOxTethers"              : 10,
+      "AIOxTethers_DynamicMaxOxTethers"       : 10,
+      "AIOxTethers_MinimumOxTethersPerQuarry" : 2,
+      "AIOxTethers_MaximumOxTethersPerQuarry" : 4,
+      "AIOxTethers_ThresholdStoneLoad"        : 5
   }
 }

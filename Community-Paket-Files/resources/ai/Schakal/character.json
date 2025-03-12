@@ -48,7 +48,7 @@
     "PopulationPerQuarry": 9,
     "PopulationPerIronmine": 11,
     "PopulationPerPitchrig": 52,
-    "MaxQuarries": 4,
+    "MaxQuarries": 3,
     "MaxIronmines": 8,
     "MaxWoodcutters": 8,
     "MaxPitchrigs": 2,
@@ -186,11 +186,19 @@
     "AttUnitSiegeDefMax": 140,
     "AttUnitSiegeDefGroupsCount": 1,
     "AttUnitMain1": "ArabSwordsman",
-    "AttUnitMain2": "None",
-    "AttUnitMain3": "None",
-    "AttUnitMain4": "None",
-    "AttMaxDefault": 30,
+    "AttUnitMain2": "ArabSwordsman",
+    "AttUnitMain3": "ArabSwordsman",
+    "AttUnitMain4": "Maceman",
+    "AttMaxDefault": 50,
     "AttMainGroupsCount": 2,
-    "TargetChoice": "Balanced"
+    "TargetChoice": "Balanced",
+ 	"RunningUnits_Macemen": 1,
+"AIOxTethers_DisableInitialOxTether"    : 1,
+      "AIOxTethers_Logic"                     : 1,
+      "AIOxTethers_MaxOxTethers"              : 12,
+      "AIOxTethers_DynamicMaxOxTethers"       : 12,
+      "AIOxTethers_MinimumOxTethersPerQuarry" : 3,
+      "AIOxTethers_MaximumOxTethersPerQuarry" : 4,
+      "AIOxTethers_ThresholdStoneLoad"        : 5
   }
 }

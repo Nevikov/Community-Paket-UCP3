@@ -191,6 +191,14 @@
     "AttUnitMain4": "Tunneler",
     "AttMaxDefault": 200,
     "AttMainGroupsCount": 2,
-    "TargetChoice": "Balanced"
+    "TargetChoice": "Balanced",
+      "RunningUnits_Spearmen": 1,
+"AIOxTethers_DisableInitialOxTether"    : 1,
+      "AIOxTethers_Logic"                     : 1,
+      "AIOxTethers_MaxOxTethers"              : 10,
+      "AIOxTethers_DynamicMaxOxTethers"       : 10,
+      "AIOxTethers_MinimumOxTethersPerQuarry" : 3,
+      "AIOxTethers_MaximumOxTethersPerQuarry" : 4,
+      "AIOxTethers_ThresholdStoneLoad"        : 5
   }
 }

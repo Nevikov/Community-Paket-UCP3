@@ -191,6 +191,14 @@
     "AttUnitMain4": "Maceman",
     "AttMaxDefault": 0,
     "AttMainGroupsCount": 2,
-    "TargetChoice": "Balanced"
+    "TargetChoice": "Balanced",
+ 	"RunningUnits_Macemen": 1,
+"AIOxTethers_DisableInitialOxTether"    : 1,
+      "AIOxTethers_Logic"                     : 1,
+      "AIOxTethers_MaxOxTethers"              : 12,
+      "AIOxTethers_DynamicMaxOxTethers"       : 12,
+      "AIOxTethers_MinimumOxTethersPerQuarry" : 3,
+      "AIOxTethers_MaximumOxTethersPerQuarry" : 4,
+      "AIOxTethers_ThresholdStoneLoad"        : 5
   }
 }
