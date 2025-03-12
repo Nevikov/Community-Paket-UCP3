@@ -2,7 +2,6 @@ name: Community-Paket
 author: Nevikov
 version: 1.1.1
 dependencies:
-  NewBalance: ^1.0.0
   ucp2-legacy: ^2.15.1
   graphicsApiReplacer: ^1.2.0
   Community-Paket-Files: ^1.1.1

@@ -40,10 +40,12 @@ config-sparse:
           enabled:
             contents:
               suggested-value: false
+        u_spearmen_run:
+          enabled:
+            contents:
+              suggested-value: false
   plugins:
     Community-Paket:
-      config: {}
-    NewBalance:
       config: {}
   load-order:
     - extension: ai-ox-tethers
@@ -52,8 +54,6 @@ config-sparse:
       version: 1.0.1
     - extension: Community-Paket
       version: 1.0.1
-    - extension: NewBalance
-      version: 1.0.0
 config-full:
   modules:
     ucp2-legacy:
@@ -188,7 +188,7 @@ config-full:
         o_freetrader:
           enabled:
             contents:
-              value: false
+              value: true
         o_healer:
           enabled:
             contents:
@@ -221,15 +221,15 @@ config-full:
         u_arabxbow:
           enabled:
             contents:
-              value: false
+              value: true
         u_laddermen:
           enabled:
             contents:
-              value: false
+              value: true
         u_spearmen:
           enabled:
             contents:
-              value: false
+              value: true
         u_spearmen_run:
           enabled:
             contents:
@@ -431,11 +431,6 @@ config-full:
           padding:
             contents:
               value: 0
-    rebalancer:
-      config:
-        balance_config_file_selector:
-          contents:
-            value: ucp/plugins/NewBalance-*/resources/new_balance.json
     running-units:
       config:
         macemen:
@@ -1470,8 +1465,6 @@ config-full:
       config: {}
     Community-Paket:
       config: {}
-    NewBalance:
-      config: {}
   load-order:
     - extension: ucp2-legacy
       version: 2.15.1
@@ -1493,13 +1486,9 @@ config-full:
       version: 1.1.0
     - extension: Community-Paket-Files
       version: 1.0.1
-    - extension: rebalancer
-      version: 1.0.6
     - extension: ai-ox-tethers
       version: 1.0.0
     - extension: running-units
       version: 1.0.1
     - extension: Community-Paket
       version: 1.0.1
-    - extension: NewBalance
-      version: 1.0.0
