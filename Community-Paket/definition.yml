@@ -1,14 +1,12 @@
 name: Community-Paket
-display-name: Community Paket
 author: Nevikov
-version: 1.1.2
+version: 1.1.0
 dependencies:
-  Community-Paket: ^1.0.1
-  running-units: ^1.0.1
+  NewBalance-Nevikov: ^1.0.2
+  Community-Paket-Files: ^1.1.0
   ucp2-legacy: ^2.15.1
   ai-ox-tethers: ^1.0.0
-  graphicsApiReplacer: ^1.2.0
-  framework: ">=3.0.6"
-  frontend: ">=1.0.12"
-type: plugin
-
+  running-units: ^1.0.1
+  graphicsApiReplacer: ^1.3.0
+  framework: ">=3.0.7"
+  frontend: ">=1.0.13"

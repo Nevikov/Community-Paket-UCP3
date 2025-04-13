@@ -1,7 +1,7 @@
 name: Community-Paket-Files
 display-name: Community Paket Files
 author: Nevikov
-version: 1.1.2
+version: 1.1.0
 dependencies:
   aiSwapper: ^1.0.1
   framework: ^3.0.0
